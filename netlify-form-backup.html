@@ -1,0 +1,152 @@
+<!-- 
+NETLIFY FORMS BACKUP CONFIGURATION
+This is an alternative form configuration using Netlify Forms instead of Formspree.
+Only use this if you're deploying to Netlify and want to avoid external dependencies.
+
+To implement this:
+1. Replace the existing form in index.html with this code
+2. Deploy to Netlify
+3. Forms will automatically be detected and configured
+-->
+
+<form id="contactForm" name="justama-contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="needs-validation" novalidate>
+    <!-- Hidden field for spam protection -->
+    <input type="hidden" name="bot-field" />
+    
+    <!-- Hidden field to identify form -->
+    <input type="hidden" name="form-name" value="justama-contact" />
+    
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label for="fullName" class="form-label">Full Name *</label>
+            <input type="text" class="form-control" id="fullName" name="fullName" required>
+            <div class="invalid-feedback">Please provide your full name.</div>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="phone" class="form-label">Phone Number *</label>
+            <input type="tel" class="form-control" id="phone" name="phone" required>
+            <div class="invalid-feedback">Please provide your phone number.</div>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div class="invalid-feedback">Please provide a valid email address.</div>
+        </div>
+        
+        <div class="col-md-6">
+            <label for="serviceType" class="form-label">Service Type *</label>
+            <select class="form-select" id="serviceType" name="serviceType" required>
+                <option value="">Choose a service...</option>
+                <option value="Import Documentation">Import Documentation</option>
+                <option value="Export Compliance">Export Compliance</option>
+                <option value="Trade Financing">Trade Financing</option>
+                <option value="Supply Chain Management">Supply Chain Management</option>
+                <option value="Warehousing & Distribution">Warehousing & Distribution</option>
+                <option value="Trade Consulting">Trade Consulting</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="invalid-feedback">Please select a service type.</div>
+        </div>
+        
+        <div class="col-12">
+            <label for="message" class="form-label">Message/Inquiry Details</label>
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tell us about your import/export requirements..."></textarea>
+        </div>
+        
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="privacyPolicy" name="privacyPolicy" value="agreed" required>
+                <label class="form-check-label" for="privacyPolicy">
+                    I agree to the <a href="#" class="text-primary">Privacy Policy</a> and consent to being contacted about my inquiry. *
+                </label>
+                <div class="invalid-feedback">You must agree to the privacy policy.</div>
+            </div>
+        </div>
+        
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary btn-lg px-5">Send Inquiry</button>
+        </div>
+    </div>
+</form>
+
+<!-- 
+NETLIFY FORMS SETUP INSTRUCTIONS:
+
+1. REPLACE EXISTING FORM:
+   - Find the form section in index.html (around line 363)
+   - Replace the entire <form>...</form> block with the code above
+
+2. UPDATE JAVASCRIPT:
+   - The existing JavaScript will work with minor modifications
+   - Netlify handles form submission automatically
+   - You may want to customize the success/error handling
+
+3. DEPLOYMENT:
+   - Deploy to Netlify
+   - Forms are automatically detected during build
+   - No additional configuration needed
+
+4. FORM MANAGEMENT:
+   - Access forms in Netlify dashboard under "Forms"
+   - Set up email notifications
+   - Download submissions as CSV
+   - Configure spam filtering
+
+5. ADVANTAGES:
+   - No external dependencies
+   - Free with Netlify hosting
+   - Integrated spam protection
+   - Built-in form analytics
+
+6. LIMITATIONS:
+   - Only works with Netlify hosting
+   - Limited customization options
+   - Basic email notifications only
+
+NOTIFICATION SETUP:
+1. Go to Netlify dashboard
+2. Navigate to Forms section
+3. Click on your form
+4. Set up email notifications
+5. Configure notification recipients
+
+SPAM PROTECTION:
+- Honeypot field (bot-field) is included
+- Netlify provides built-in spam filtering
+- You can enable reCAPTCHA if needed
+
+TESTING:
+1. Deploy to Netlify
+2. Submit test form on live site
+3. Check Netlify dashboard for submission
+4. Verify email notifications work
+5. Test spam protection
+
+This backup option ensures your contact form works even if Formspree has issues.
+-->
+
+<script>
+// Optional: Custom handling for Netlify Forms
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contactForm');
+    
+    if (form && form.hasAttribute('data-netlify')) {
+        form.addEventListener('submit', function(e) {
+            // Let Netlify handle the submission
+            // You can add custom success/error handling here if needed
+            
+            const submitBtn = form.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Netlify will handle the actual submission
+            // You can customize the success page or add JavaScript handling
+        });
+    }
+});
+</script>

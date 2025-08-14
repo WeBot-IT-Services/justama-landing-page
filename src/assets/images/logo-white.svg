@@ -1,0 +1,9 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="15" width="30" height="30" fill="white" rx="4"/>
+  <rect x="15" y="20" width="20" height="5" fill="#1e40af"/>
+  <rect x="15" y="27" width="15" height="3" fill="#1e40af"/>
+  <rect x="15" y="32" width="18" height="3" fill="#1e40af"/>
+  <text x="50" y="22" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">JUSTAMA</text>
+  <text x="50" y="34" fill="#93c5fd" font-family="Arial, sans-serif" font-size="8">IMPORT &amp; EXPORT</text>
+  <text x="50" y="44" fill="#93c5fd" font-family="Arial, sans-serif" font-size="8">SDN BHD</text>
+</svg>

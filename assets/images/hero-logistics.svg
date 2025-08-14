@@ -1,0 +1,54 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="800" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Ground -->
+  <rect y="400" width="800" height="200" fill="#4a5568"/>
+  
+  <!-- Container ship -->
+  <rect x="100" y="350" width="200" height="60" fill="#2d3748" rx="5"/>
+  <rect x="110" y="330" width="20" height="20" fill="#e53e3e"/>
+  <rect x="140" y="330" width="20" height="20" fill="#3182ce"/>
+  <rect x="170" y="330" width="20" height="20" fill="#38a169"/>
+  <rect x="200" y="330" width="20" height="20" fill="#d69e2e"/>
+  <rect x="230" y="330" width="20" height="20" fill="#805ad5"/>
+  <rect x="260" y="330" width="20" height="20" fill="#dd6b20"/>
+  
+  <!-- Crane -->
+  <rect x="450" y="200" width="15" height="200" fill="#4a5568"/>
+  <rect x="430" y="200" width="55" height="15" fill="#4a5568"/>
+  <rect x="480" y="190" width="80" height="8" fill="#4a5568"/>
+  <rect x="555" y="190" width="8" height="30" fill="#4a5568"/>
+  
+  <!-- Containers on ground -->
+  <rect x="350" y="370" width="40" height="30" fill="#e53e3e"/>
+  <rect x="400" y="370" width="40" height="30" fill="#3182ce"/>
+  <rect x="350" y="340" width="40" height="30" fill="#38a169"/>
+  
+  <!-- Truck -->
+  <rect x="600" y="380" width="80" height="20" fill="#2d3748"/>
+  <rect x="680" y="370" width="30" height="30" fill="#4a5568"/>
+  <circle cx="620" cy="405" r="8" fill="#1a202c"/>
+  <circle cx="660" cy="405" r="8" fill="#1a202c"/>
+  <circle cx="690" cy="405" r="8" fill="#1a202c"/>
+  
+  <!-- Clouds -->
+  <circle cx="150" cy="80" r="25" fill="white" opacity="0.8"/>
+  <circle cx="170" cy="80" r="30" fill="white" opacity="0.8"/>
+  <circle cx="190" cy="80" r="25" fill="white" opacity="0.8"/>
+  
+  <circle cx="600" cy="120" r="20" fill="white" opacity="0.8"/>
+  <circle cx="615" cy="120" r="25" fill="white" opacity="0.8"/>
+  <circle cx="630" cy="120" r="20" fill="white" opacity="0.8"/>
+  
+  <!-- Text overlay -->
+  <text x="400" y="500" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="bold">Professional Freight Solutions</text>
+  <text x="400" y="530" text-anchor="middle" fill="#cbd5e0" font-family="Arial, sans-serif" font-size="16">Connecting GCC & Asia</text>
+</svg>
