@@ -12,6 +12,30 @@
       "dest": "/index.html"
     },
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
+    },
+    {
+      "src": "/assets/css/(.*)",
+      "dest": "/assets/css/$1"
+    },
+    {
+      "src": "/assets/js/(.*)",
+      "dest": "/assets/js/$1"
+    },
+    {
+      "src": "/assets/images/(.*)",
+      "dest": "/assets/images/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot|json|xml|txt))",
+      "dest": "/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/$1"
     }
